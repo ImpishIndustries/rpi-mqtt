@@ -1,0 +1,6 @@
+mqtt:
+  image: impish-industries/rpi-mqtt:latest
+  ports:
+    - "1883:1883"
+    - "8883:8883"
+  restart: always
