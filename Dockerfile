@@ -12,6 +12,4 @@ RUN apt-get install mosquitto mosquitto-clients python-mosquitto
 
 ADD conf/mqtt/mosquitto.conf /etc/mosquitto.conf
 
-CMD /etc/init.d/mosquitto start
-
-CMD tail -f /dev/null
+CMD /etc/init.d/mosquitto start && tail -f /dev/null
